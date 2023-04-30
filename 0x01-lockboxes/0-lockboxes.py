@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-"""Lockboxes module."""
+"""
+Task: Lockboxes
+"""
 
 
 def canUnlockAll(boxes):
-    """Function to Check if all boxes can be unlocked."""
-    checked = set()
-    to_check = [0]
-
-    while len(to_check) != 0:
-        box = to_check.pop(0)
-        if box in checked:
+    unlocked = [0]
+    for box_id, box in enumerate(boxes):
+        if not box:
             continue
-        for key in boxes[box]:
-            to_check.append(key)
-        checked.add(box)
-
-    return (len(checked) == len(boxes))
+        for key in box:
+            if key < len(boxes) and key not in unlocked and key != box_id:
+                unlocked.append(key)
+    if len(unlocked) == len(boxes):
+        return True
+    return False
