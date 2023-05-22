@@ -3,6 +3,7 @@
 Python utf-8 validation
 """
 
+
 def validUTF8(data):
     """Validate a utf-8 string."""
     extra_bytes = 0
