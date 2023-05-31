@@ -19,7 +19,7 @@ def valid(board, column):
 
 
 def nqueens(board, column, n):
-    """Find the nqueens solutions  possible from this board state."""
+    """Find the nqueens solutions possible from this board state."""
     if column == n:
         print_board(board)
         return
@@ -33,7 +33,7 @@ def nqueens(board, column, n):
 
 
 def main():
-    """Solve the n  queens problem."""
+    """Solve the n queens problem."""
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
