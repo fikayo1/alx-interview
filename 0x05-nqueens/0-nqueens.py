@@ -33,7 +33,7 @@ def nqueens(board, column, n):
 
 
 def main():
-    """Solve the n queens problem."""
+    """Solve the n  queens problem."""
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
