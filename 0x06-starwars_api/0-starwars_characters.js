@@ -12,7 +12,6 @@ request(url + id, async function (error, res, body) {
 
   if (res && res.statusCode === 200) {
     const data = JSON.parse(body);
-    console.log('status code:', res.statusCode);
     const characters = data.characters;
 
     for (let i = 0; i < characters.length; i++) {
@@ -21,7 +20,6 @@ request(url + id, async function (error, res, body) {
       console.log(characterData.name);
     }
   } else {
-    console.log('status code:', res && res.statusCode);
   }
 });
 
