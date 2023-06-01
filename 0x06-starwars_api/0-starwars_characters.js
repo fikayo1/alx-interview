@@ -19,7 +19,6 @@ request(url + id, async function (error, res, body) {
       const characterData = await getCharacterData(characterURL);
       console.log(characterData.name);
     }
-  } else {
   }
 });
 
