@@ -6,7 +6,7 @@ Rotate 2D Matrix
 
 def rotate_2d_matrix(matrix):
     """
-    Rotate a matrix 90 degrees clockwise
+    Rotate a matrix 90  degrees clockwise
     """
     rotatedmat = []
     revList = []
