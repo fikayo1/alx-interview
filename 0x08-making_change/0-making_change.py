@@ -14,7 +14,5 @@ def makeChange(coins, total):
         count = (total // coin)
         tot += count
         total = total - (coin * count)
-        if total < min(coins):
-            return -1
         coins.remove(coin)
     return tot
